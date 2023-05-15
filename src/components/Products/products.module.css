@@ -1,0 +1,12 @@
+.container{
+    width: 80%;
+    margin: 10px auto;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 10px;
+}
+.container h2{
+    text-align: left;
+}
