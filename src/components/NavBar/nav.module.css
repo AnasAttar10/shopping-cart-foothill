@@ -32,9 +32,51 @@
     padding: 15px;
     background-color: white;
     border-radius: 50%;
+    position: relative;
+    color: black;
+}
+
+.totalProducts{
+    position: absolute;
+    bottom: -10px ; 
+    right: 0px;
+    display: block ;
+    color: white;
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    background-color: red;
+    border-radius: 50%;  
 }
 .cartIcon:hover{
     background-color:black ;
     color: white;
     border: 1px solid black;
+}
+
+.navItem a.active{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ /* Extra small devices (portrait phones, less than 576px) */
+ @media (max-width: 575.98px) { 
+    .navlinks{
+        width: 50%;
+    }
+  }
+  
+  /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+    .navlinks{
+        width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .navlinks{
+        width: 50%;
+    }
 }

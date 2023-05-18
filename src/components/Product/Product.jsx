@@ -3,24 +3,21 @@ import style from './product.module.css'
 import { useShoppingCart } from '../../Context/shopppingcartContext'
 const Product = ({product}) => {
 const { 
-    cartItems ,
     getItemQuantity ,
     increseCartQuantity,
     decreseCartQuantity,
     removeItemFromCart ,
-    isMyCartVisible,
-    setisMyCartVisible
   } = useShoppingCart()
 
   const quantity =getItemQuantity(product.id)
   return (
     <div className={style.product}>
         <div className={style.imageContainer}>
-            <img className={style.image} src={product.image} alt={product.title} />
+            <img loading='lazy' className={style.image} src={product.image} alt={product.title} />
         </div>
         <div className={style.productInformation}>
-            <h5>{product.price} $</h5>
-            <h5>{product.title}</h5>
+            <span>{product.price} $</span>
+            <p>{product.title}</p>
         </div>
         {
           quantity > 0 ?  

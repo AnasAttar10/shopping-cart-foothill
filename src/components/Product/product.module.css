@@ -3,8 +3,8 @@
     flex-direction: column;
     justify-content: space-between;
     width: 90%;
-    border: 1px solid #8888
-    
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .imageContainer{
     padding: 10px ;
@@ -14,10 +14,20 @@
 .image{
     width: 100%;
     height: 100%;
+    aspect-ratio: 3/2;
 }
 .productInformation{
     text-align: center;
     padding: 5px;
+    color: black;
+}
+.productInformation >span{
+    font-weight: bold;
+}
+.productInformation > p{
+    height: 65px;
+    overflow: auto;
+    text-align: left;
 }
 .btnContainer{
     display: flex;

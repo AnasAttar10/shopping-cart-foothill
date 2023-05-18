@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+/* body{
+  background-color: #282c34;
+  color: white;
+} */
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,8 +38,4 @@
   to {
     transform: rotate(360deg);
   }
-}
-a.active {
-  font-weight: bold;
-  color: black;
 }

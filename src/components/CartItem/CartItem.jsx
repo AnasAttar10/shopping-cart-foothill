@@ -11,8 +11,8 @@ const CartItem = ({product}) => {
         </div>
         <div className={style.cartInformation}>
             <h5>{product.title}</h5>
-            <h5>{product.price}$</h5>
-            <h5>The Total  : {totalPrice}$</h5>
+            <p>{product.price}$</p>
+            <span>The Total  : {totalPrice}$</span>
         </div>
         <span className={style.closeBtn} onClick={()=>removeItemFromCart(product.id)}>X</span>
 

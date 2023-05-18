@@ -7,6 +7,7 @@
     position: relative;
 }
 .imageInCartContainer{
+    padding: 10px;
     height: 100px;
     width: 20%;
 }
@@ -17,14 +18,19 @@ img{
 .cartInformation{
     border-left: 1px solid #8888;
     width: 80%;
+    text-align: center;
 }
 .cartInformation h5{
     margin: 10px;
+    text-align: left;
+}
+.cartInformation p {
+    text-align: center;
 }
 .closeBtn{
     position: absolute;
-    top: 10px;
-    right: 5px;
+    top: 2px;
+    right: 2px;
     width: 15px;
     height: 15px;
     font-size: 10px;

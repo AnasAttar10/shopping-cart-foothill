@@ -11,7 +11,9 @@ const  ShoppingCartProvider = ({children})=>{
         setisMyCartVisible(!isMyCartVisible)
     }
 
-
+    const getTotalProducts =()=>{
+        return cartItems.length 
+    }
     const getItemQuantity =(id)=>{
         return cartItems.find(item => item.id === id)?.quantity || 0
     }
@@ -57,6 +59,7 @@ const  ShoppingCartProvider = ({children})=>{
             increseCartQuantity,
             decreseCartQuantity,
             removeItemFromCart ,
+            getTotalProducts,
             isMyCartVisible ,
             toggleVisiblityMyCart
         }}>
